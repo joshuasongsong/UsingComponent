@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="10dp"
+    android:scrollbarStyle="outsideInset"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnGoTapCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="TapCounter" />
+
+        <Button
+            android:id="@+id/btnGoSeekBarPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="SeekBarPercentage"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoTapCounter" />
+
+        <Button
+            android:id="@+id/btnGoImagePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ImagePicker"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoSeekBarPercentage" />
+
+        <Button
+            android:id="@+id/btnGoWebSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="WebSearch"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoImagePicker" />
+
+        <Button
+            android:id="@+id/btnGoImageList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ImageList"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoWebSearch" />
+
+        <Button
+            android:id="@+id/btnGoBottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="BottomNavigation"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoImageList" />
+
+        <Button
+            android:id="@+id/btnGoImageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ImageSlider"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoBottomNavigation" />
+
+        <Button
+            android:id="@+id/btnGoProgressControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ProgressControl"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoImageSlider" />
+
+        <Button
+            android:id="@+id/btnGoActivitySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ActivitySchedule"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoProgressControl" />
+
+        <Button
+            android:id="@+id/btnGoGtihubStars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="GtihubStars"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoActivitySchedule" />
+
+        <Button
+            android:id="@+id/btnGoLocalStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="LocalStorage"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoGtihubStars" />
+
+        <Button
+            android:id="@+id/btnGoBallAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="BallAnimation"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoLocalStorage" />
+
+        <Button
+            android:id="@+id/btnGoNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="Notification"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoBallAnimation" />
+
+        <Button
+            android:id="@+id/btnGoPullToRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="PullToRequest"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoNotification" />
+
+        <Button
+            android:id="@+id/btnGoDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="Detail"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoPullToRequest" />
+
+        <Button
+            android:id="@+id/btnGoSideMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="SideMenu"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoDetail" />
+
+        <Button
+            android:id="@+id/btnGoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="Player"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoSideMenu" />
+
+        <Button
+            android:id="@+id/btnGoRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="Record"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoPlayer" />
+
+        <Button
+            android:id="@+id/btnGoLittleBirdSound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="LittleBirdSound"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoRecord" />
+
+        <Button
+            android:id="@+id/btnGoNativeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="NativeDetail"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoLittleBirdSound" />
+
+        <Button
+            android:id="@+id/btnGoActivityTransition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ActivityTransition"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoNativeDetail" />
+
+        <Button
+            android:id="@+id/btnGoLayoutSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="LayoutSwitch"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoActivityTransition" />
+
+        <Button
+            android:id="@+id/btnGoLocalDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="LocalDatabase"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoLayoutSwitch" />
+
+        <Button
+            android:id="@+id/btnGoGoogleVoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="GoogleVoice"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoLocalDatabase" />
+
+        <Button
+            android:id="@+id/btnGoPainter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="Painter"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoGoogleVoice" />
+
+        <Button
+            android:id="@+id/btnGoFaceRecognizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="FaceRecognizer"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoPainter" />
+
+        <Button
+            android:id="@+id/btnGoActionReceive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ActionReceive"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoFaceRecognizer" />
+
+        <Button
+            android:id="@+id/btnGoReceiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="Receiver"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoActionReceive" />
+
+        <Button
+            android:id="@+id/btnGoActionSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ActionSend"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoReceiver" />
+
+        <Button
+            android:id="@+id/btnGoShakeShake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ShakeShake"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoActionSend" />
+
+        <Button
+            android:id="@+id/btnGoParks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="Parks"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoShakeShake" />
+
+        <Button
+            android:id="@+id/btnGoShowView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="ShowView"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoParks" />
+
+        <Button
+            android:id="@+id/btnGoVideoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnGoActivity"
+            android:text="VideoPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoShowView" />
+        <!--CHAPTER4-->
+        <!--<net.songsong.funcode.MovableImageView-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:src="@drawable/img_mountain_s"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"/>-->
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

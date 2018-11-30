@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeekBarPercentageActivity">
+
+    <!--CHAPTER2-->
+    <EditText
+        android:id="@+id/EditText_KeyPrice"
+        android:textSize="40sp"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/number_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextView_PercentText"
+        android:text="@string/percent"
+        android:textSize="18sp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/EditText_KeyPrice"
+        app:layout_constraintTop_toTopOf="@+id/TextView_DiscountText"
+        />
+
+    <TextView
+        android:id="@+id/TextView_DiscountText"
+        android:text="@string/number_hint"
+        android:textSize="18sp"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+        android:layout_width="60dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/EditText_KeyPrice"
+        app:layout_constraintBottom_toBottomOf="@+id/EditText_KeyPrice"
+        />
+
+    <TextView
+        android:id="@+id/TextView_DiscountPriceText"
+        android:text="@string/discount_price"
+        android:textSize="18sp"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/TextView_PercentText"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_PercentText"
+        />
+
+    <TextView
+        android:id="@+id/TextView_ResultText"
+        android:text="@string/number_hint"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:gravity="end"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextView_DiscountText"
+        app:layout_constraintTop_toTopOf="@+id/TextView_DiscountPriceText"
+        />
+
+    <SeekBar
+        android:id="@+id/SeekBar_ProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:min="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextView_Description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="@+id/SeekBar_ProgressBar"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBar_ProgressBar"
+        />
+
+</android.support.constraint.ConstraintLayout>

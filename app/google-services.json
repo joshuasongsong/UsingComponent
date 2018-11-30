@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "903510158221",
+    "firebase_url": "https://savvy-pagoda-636.firebaseio.com",
+    "project_id": "savvy-pagoda-636",
+    "storage_bucket": "savvy-pagoda-636.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903510158221:android:99802cd219329c79",
+        "android_client_info": {
+          "package_name": "net.songsong.funcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903510158221-4humqdqd450a6hvgm4bg0s4fgbfs0l7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDreGoNeF_ola7Yv8ci04HNqLhcsNOPOcs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

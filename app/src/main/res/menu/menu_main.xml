@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/reset_ButtonCount"
+        android:title="@string/reset"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/Menu_Switch_Layout"
+        android:title="switch"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icon_menu_1"/>
+
+    <item
+        android:id="@+id/layout_menu_plus"
+        android:icon="@drawable/icon_plus"
+        android:title="switch"
+        app:showAsAction="always" />
+</menu>

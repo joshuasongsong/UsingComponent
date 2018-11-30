@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Nav_1_Fragment"
+            android:icon="@drawable/icon_chicken"
+            android:title="@string/chicken"
+            android:checked="true"/>
+
+        <item android:title="@string/egg">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/Nav_2_Fragment"
+                        android:icon="@drawable/icon_egg1"
+                        android:title="Egg1" />
+
+                    <item
+                        android:id="@+id/Nav_4_Fragment"
+                        android:icon="@drawable/icon_egg3"
+                        android:title="Egg2" />
+                    <item
+                        android:id="@+id/Nav_5_Fragment"
+                        android:icon="@drawable/icon_egg4"
+                        android:title="Egg3" />
+                    <item
+                        android:id="@+id/Nav_7_Fragment"
+                        android:icon="@drawable/icon_egg6"
+                        android:title="Egg4" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Egg Group">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/Nav_3_Fragment"
+                        android:icon="@drawable/icon_egg2"
+                        android:title="Egg5" />
+
+                    <item
+                        android:id="@+id/Nav_6_Fragment"
+                        android:icon="@drawable/icon_egg5"
+                        android:title="Egg6" />
+
+                </group>
+            </menu>
+        </item>
+
+
+    </group>
+</menu>
